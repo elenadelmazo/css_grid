@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    text-transform: uppercase;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "hero hero hero"
+    "menu main main"
+    "menu banner banner"
+    "menu extra imagen";
+}
+
+.item{
+    font-size: 1.5rem;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item3 {
+    grid-area: hero;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item4 {
+    grid-area: main;
+}
+
+.item7 {
+    grid-area: banner;
+}
+
+.item6 {
+    grid-area: extra;
+}
